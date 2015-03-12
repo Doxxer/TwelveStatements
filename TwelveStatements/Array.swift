@@ -28,7 +28,6 @@ extension Array {
         if n <= 0 {
             return []
         }
-        
         return Array(self[0..<Swift.min(n, self.count)])
     }
     
@@ -38,7 +37,6 @@ extension Array {
         } else if n >= self.count {
             return []
         }
-        
         return Array(self[n..<self.count])
     }
     

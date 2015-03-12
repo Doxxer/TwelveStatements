@@ -9,7 +9,7 @@
 import Foundation
 
 extension Int {
-    func binaryRepresentationOfLenght(length: Int) -> [Int] {
+    func binaryRepresentationOfLength(length: Int) -> [Int] {
         var binaryRepresentation:[Int] = []
         var value = self
         while (value != 0) {

@@ -30,7 +30,7 @@ let statements:[([Bool] -> Bool)] = [
 ]
 
 for variant in 0..<(1<<statements.count) {
-    let attempt = variant.binaryRepresentationOfLenght(statements.count).map { $0 == 1 }
+    let attempt = variant.binaryRepresentationOfLength(statements.count).map { $0 == 1 }
     
     if statements.map({ $0(attempt) }) == attempt {
         let trueAre = attempt.zipWithIndex().filter { $0.0 }.map { $0.1 + 1 }
